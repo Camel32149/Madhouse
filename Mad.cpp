@@ -9,7 +9,7 @@
 using namespace std;
 
 //demo:
-class camel : public API {
+/*class camel : public API {
 public:
 	camel(bool f_flag, int* pe, int* ps) : API(f_flag, pe, ps) {};
 	void core() {
@@ -31,7 +31,7 @@ public:
 			result = a;
 		}
 	};
-};
+};*/
 
 int judge(int player1, int player2){  //0:player1 won 1:player2 won 
 									  //2:Draw on both sides
@@ -61,9 +61,11 @@ int main()
 {	
 	int pl1[3], pl2[3];
 	int ptr = 0;
-	//re:
-	camel player1(0, &pl2[ptr], &pl1[ptr]);
-	luo player2(1, &pl1[ptr], &pl2[ptr]);
+	pl1[0] = 0;
+	pl2[0] = 0;//Init the arrays for players data;
+	//demo:
+	//camel player1(0, &pl2[ptr], &pl1[ptr]);
+	//luo player2(1, &pl1[ptr], &pl2[ptr]);
 
 	for(ptr; ptr < 3; ptr++){
 		player1.core();player2.core();
