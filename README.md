@@ -20,7 +20,8 @@ class camel : public API{
 1.result:
 this member variable will send to the "main" fucntion.
 define: ```c++
-int result;```
+int result;
+```
 it can be anywhere from 1 to 3
 #### 1 is scissor
 #### 2 is rock
@@ -28,19 +29,22 @@ it can be anywhere from 1 to 3
 
 2.getEnemyLastResult:
 define: ```c++
-int getEnemyLastResult()```
+int getEnemyLastResult()
+```
 it will return a integer and the integer is the result of the enmey's previous game.
 
 3.getSelfLastResult:
 define: ```c++
-int getSelfLastResult()```
+int getSelfLastResult()
+```
 it will return a integer and the integer is the result of your previous game.
 
 * Last but not least
 if you want to know this is the first round,
 you can```c++
-if(this->getEnmeyLastResult()==0){//to do:} ```
-
+if(this->getEnmeyLastResult()==0){//to do:}
+```
+***
 ### if you are the judge
 * save the players' codes
 and edit the "main" function and some "#define" in "Mad.cpp".
