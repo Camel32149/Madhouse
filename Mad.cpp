@@ -25,7 +25,7 @@ public:
 	luo(bool f_flag, int* pe, int* ps) : API(f_flag, pe, ps) {};
 	void core() {
 		int a = this->getEnemyLastResult();
-		if(a != 1 && a!= 2 && a!= 3){
+		if(this->getEnemyLastResult == 0){
 			result = 1;
 		}else{
 			result = a;
