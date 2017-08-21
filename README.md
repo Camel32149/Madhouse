@@ -19,31 +19,23 @@ class camel : public API{
 * the API provides some interface with players to make the program better.
 1.result:
 this member variable will send to the "main" fucntion.
-define: ```c++
-int result;
-```
+define: ```int result;```
 it can be anywhere from 1 to 3
 #### 1 is scissor
 #### 2 is rock
 #### 3 is paper
 
 2.getEnemyLastResult:
-define: ```c++
-int getEnemyLastResult()
-```
+define: ```int getEnemyLastResult()```
 it will return a integer and the integer is the result of the enmey's previous game.
 
 3.getSelfLastResult:
-define: ```c++
-int getSelfLastResult()
-```
+define: ```int getSelfLastResult()```
 it will return a integer and the integer is the result of your previous game.
 
 * Last but not least
 if you want to know this is the first round,
-you can```c++
-if(this->getEnmeyLastResult()==0){//to do:}
-```
+you can```if(this->getEnmeyLastResult()==0){//to do:}```
 ***
 ### if you are the judge
 * save the players' codes
@@ -54,7 +46,7 @@ And then edit the makefile,the compiling environment is c++11.
 * instance players' class in the "main" function(2p)
 the variable name must be player1 or player2.
 demo:
-```c++
+```
   camel player1(0, &pl2[ptr], &pl1[ptr]);
   luo player2(0, &pl1[ptr], &pl2[ptr});
 ```
