@@ -13,7 +13,7 @@ class camel : public API{
     //to do:
     result = 1;
   };
-}; ```
+}; ``
 
 * the API provides some interface with players to make the program better.
 1.result:
